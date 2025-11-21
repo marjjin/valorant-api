@@ -31,11 +31,25 @@ export function Maps() {
       self.findIndex((m) => m.displayName === map.displayName) === index
   );
 
+  // Filtrar solo los mapas deseados
+  const allowedMaps = [
+    "Ascent",
+    "Bind",
+    "Haven",
+    "Lotus",
+    "Sunset",
+    "Breeze",
+    "Icebox",
+  ];
+  const filteredMaps = uniqueMaps.filter((map) =>
+    allowedMaps.includes(map.displayName)
+  );
+
   return (
     <main className="maps-container">
-      <h1 className="title-maps">Mapas de Valorant</h1>
+      <h1 className="title-maps">POOL MAPAS COMPETITVO</h1>
       <section className="maps-grid">
-        {uniqueMaps.map((map) => (
+        {filteredMaps.map((map) => (
           <article key={map.uuid} className="map-card">
             {map.displayIcon ? (
               <img
