@@ -1,0 +1,68 @@
+/* Variables CSS para el Header */
+:root {
+  /* Colores */
+  --header-bg: #0f1419;
+  --header-text: #ffffff;
+  --valorant-red: #ff4655;
+  --valorant-blue: #00d4ff;
+  --nav-hover: #1e2328;
+  --nav-active: var(--valorant-red);
+
+  /* Espaciados */
+  --header-padding: 1rem 2rem;
+  --header-height: 80px;
+  --nav-gap: 2rem;
+  --nav-item-padding: 0.75rem 1.25rem;
+
+  /* Tipografía */
+  --header-font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --header-title-size: 1.8rem;
+  --nav-font-size: 1rem;
+  --nav-font-weight: 500;
+
+  /* Efectos */
+  --border-radius: 8px;
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  --nav-shadow: 0 4px 15px rgba(255, 70, 85, 0.2);
+
+  /* Variables específicas para Footer */
+  --footer-bg: #0a0e13;
+  --footer-border-color: #1e2328;
+  --footer-text-color: #9ca3af;
+  --footer-link-color: var(--header-text);
+  --footer-link-hover: var(--valorant-blue);
+  --footer-padding: 2rem;
+  --footer-gap: 1.5rem;
+  --footer-text-size: 0.9rem;
+  --footer-copyright-size: 0.8rem;
+
+  /* Variables específicas para Cards de Agentes */
+  --card-bg: #1a1f26;
+  --card-border: #2a303a;
+  --card-hover-bg: #242b34;
+  --card-hover-border: var(--valorant-red);
+  --card-text: var(--header-text);
+  --card-description: #b8c5d1;
+  --card-padding: 1.5rem;
+  --card-border-radius: 12px;
+  --card-image-size: 80px;
+  --card-gap: 1rem;
+  --card-hover-transform: translateY(-8px);
+  --card-hover-shadow: 0 10px 30px rgba(255, 70, 85, 0.3);
+  --grid-gap: 2rem;
+  --grid-min-width: 300px;
+
+  /* Variables específicas para Botones */
+  --button-bg: var(--valorant-red);
+  --button-text: var(--header-text);
+  --button-hover-bg: #e63946;
+  --button-border: var(--valorant-red);
+  --button-hover-border: #e63946;
+  --button-padding: 0.75rem 1.5rem;
+  --button-font-size: 0.9rem;
+  --button-border-radius: 8px;
+  --button-shadow: 0 4px 15px rgba(255, 70, 85, 0.3);
+  --button-hover-shadow: 0 6px 20px rgba(255, 70, 85, 0.5);
+  --button-active-transform: scale(0.98);
+}

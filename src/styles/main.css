@@ -1,0 +1,35 @@
+@import url("/src/styles/variables.css");
+@import url("/src/components/Header/header.css");
+@import url("/src/components/Footer/footer.css");
+@import url("/src/components/Agents/Agents.css");
+@import url("/src/components/Inicio/inicio.css");
+@import url("/src/components/Maps/maps.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui;
+}
+
+/* Layout para sticky footer */
+html,
+body {
+  height: 100%;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* El main debe crecer para empujar el footer hacia abajo */
+main {
+  flex: 1;
+  padding: 1rem;
+}
+
+/* Asegurar que el footer esté al final */
+.footer {
+  margin-top: auto;
+}

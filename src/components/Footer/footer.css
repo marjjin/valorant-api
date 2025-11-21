@@ -1,0 +1,104 @@
+/* Footer Styles - Reutilizando variables del header */
+.footer {
+  background: var(--footer-bg);
+  color: var(--footer-text-color);
+  padding: var(--footer-padding);
+  border-top: 2px solid var(--footer-border-color);
+  font-family: var(--header-font-family);
+  text-align: center;
+  margin-top: auto;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Lista de navegación del footer */
+.footer ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0 0 1.5rem 0;
+  padding: 0;
+  gap: var(--footer-gap);
+  flex-wrap: wrap;
+}
+
+.footer li {
+  position: relative;
+}
+
+/* Enlaces del footer */
+.footer a {
+  color: var(--footer-link-color);
+  text-decoration: none;
+  font-size: var(--footer-text-size);
+  font-weight: var(--nav-font-weight);
+  transition: var(--transition);
+  position: relative;
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius);
+}
+
+/* Efecto hover para enlaces */
+.footer a:hover {
+  color: var(--footer-link-hover);
+  background: var(--nav-hover);
+}
+
+/* Línea animada debajo de los enlaces en hover */
+.footer a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: var(--footer-link-hover);
+  transform: translateX(-50%);
+  transition: var(--transition);
+}
+
+.footer a:hover::after {
+  width: 80%;
+}
+
+/* Copyright text */
+.footer p {
+  margin: 0;
+  font-size: var(--footer-copyright-size);
+  color: var(--footer-text-color);
+  opacity: 0.8;
+  border-top: 1px solid var(--footer-border-color);
+  padding-top: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer {
+    padding: 1.5rem 1rem;
+  }
+
+  .footer ul {
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .footer a {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .footer a {
+    display: inline-block;
+    width: auto;
+  }
+
+  .footer p {
+    font-size: 0.75rem;
+  }
+}
